@@ -1,5 +1,3 @@
-# Seedbox Data Science Application Test
-
 This project aims to analyse the result of an A/B test conducted on the subscription service cancellation page of a company.
 
 ## Background Information
@@ -17,8 +15,9 @@ Information about the A/B test:
 ## Results
 
 ### What is the approximate probability distribution between the test group and the control group
-After cleaning and analyzing the data, it was discovered that the subsription service members were distributed in approximately 75.2% to 24.8% control group to test group ratio as shown in the bar chart below
-![Probability Distribution](../master/Data/Prob_Distribution.png)
+After cleaning and analyzing the data, it was discovered that the subsription service members were distributed in approximately 75.2% to 24.8% control group to test group ratio as shown in the bar chart below:
+
+![Probability Distribution](https://github.com/Oyenike-Nwanebu/AB_Test_Analysis/blob/master/Data/Prob_Distribution.png?raw=true)
 
 To determine whether a user belonging to the test group was more likely to generate more revenues, welch test was used to determione statistical significance since there is an imbalance between the two sample groups
 
