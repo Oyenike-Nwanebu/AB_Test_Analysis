@@ -5,7 +5,7 @@ An A/B test on the cancellation page of the subscription service was recently ra
 
 Information about the A/B test:
 - control group (0) can cancel using a web form
-- test group (1) can only cancel by calling in
+- test group (1) can only cancel by calling into the customer service line
 - Users were randomly assigned to a group when they go to the website's cancellation page for the first-time
 - The distribution probabilty between both groups is uneven
 - Additional transactions generated after users were randomized were recorded
@@ -46,7 +46,9 @@ To test if the difference in the chargeback rate for both groups is significant,
 Null hypothesis: User that must call-in to cancel is less or equally likely to generate at least 1 addition rebill
 Alternative hypothesis: User that must call-in to cancel is more likely to generate at least 1 addition rebill
 
+From the transaction dataset, the control group generated 3756 rebill transactions while the test group generated 3205 rebill transactions.
 
+To test the statistical significance of the difference between the number of rebill transactions generated, one-tailed Mann-Whitney U test was used. The p-value was calculated as 1.0 (p_value > 0.05). This implies that we can accept the null hypothesis. Thus, it can be concluded with a 95% confidence level that a user that must call-in is less or equally likely to generate at least 1 addition rebill.
 
 
 ## Information About the Data
